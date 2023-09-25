@@ -8,61 +8,55 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
     <title>Frontend Mentor | Interactive card details form</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="card">
-      <div class="front">
-        <h3>0000 0000 0000 0000</h3>
-        <div class="name-exp">
-          <h4 class="name">Jane Appleseed</h4>
-          <h4 class="exp">00/00</h4>
-        </div>
-      </div>
-      <div class="back">
-        <h4>000</h4>
-      </div>
-    </div>
-    <div class="card-form">
-      <form action="#">
-        <div class="name-cont">
-          <label for="name">Cardholder Name</label>
-          <input type="text" id="name" placeholder="e.g. Kiera Grace" />
-        </div>
-        <div class="number-cont">
-          <label for="number">Card Number</label>
-          <input type="text" id="number" placeholder="e.g. 1234 5678 9123 0000" />
-        </div>
-        <div class="exp-cvc">
-          <div class="exp">
-            <p>exp. date (MM/YY)</p>
-            <input type="text" id="month" placeholder="MM" maxlength="2" />
-            <input type="text" id="year" placeholder="YY" maxlength="2" />
-          </div>
-          <div class="cvc">
-            <label for="cvc">cvc</label>
-            <input type="text" id="cvc" placeholder="e.g. 123" maxlength="3" />
+    <div class="container">
+      <div class="card">
+        <div class="front">
+          <img src="images/card-logo.svg" alt="card logo" />
+          <h1>0000 0000 0000 0000</h1>
+          <div class="name-exp">
+            <p class="name">Chanelle Thomas</p>
+            <p class="exp">00/00</p>
           </div>
         </div>
-        <button>Confirm</button>
-      </form>
+        <div class="back">
+          <p>000</p>
+        </div>
+      </div>
 
-      <!-- Completed state start -->
-      <div class="thanks">
-        <img src="images/icon-complete.svg" alt="checkmark icon" />
-        <h2>Thank You!</h2>
-        <p>We've added your card details</p>
-        <button>Continue</button>
+      <div class="card-form">
+        <form action="#">
+          <div class="name-cont">
+            <p>Cardholder Name</p>
+            <input type="text" id="name" placeholder="e.g. Chanelle Thomas" />
+          </div>
+          <div class="number-cont">
+            <p>Card Number</p>
+            <input type="text" id="number" placeholder="e.g. 1234 5678 9123 0000" />
+          </div>
+          <div class="exp-cvc">
+            <div class="exp">
+              <p>exp. date (MM/YY)</p>
+              <input type="text" id="month" placeholder="MM" maxlength="2" />
+              <input type="text" id="year" placeholder="YY" maxlength="2" />
+            </div>
+            <div class="cvc">
+              <p>cvc</p>
+              <input type="text" id="cvc" placeholder="e.g. 123" maxlength="3" />
+            </div>
+          </div>
+          <button>Confirm</button>
+        </form>
+
+        <!-- Completed state start -->
+        <div class="thanks hide">
+          <img src="images/icon-complete.svg" alt="checkmark icon" />
+          <h2>Thank You!</h2>
+          <p>We've added your card details</p>
+          <button>Continue</button>
+        </div>
       </div>
     </div>
 

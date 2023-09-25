@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+:root {
+  /* Primary */
+  -error: hsl(0, 100%, 66%);
+  /* Neutral */
+  --light-grayish-violet: hsl(270, 3%, 87%);
+  --dark-grayish-violet: hsl(279, 6%, 55%);
+  --vary-dark-violet: hsl(278, 68%, 11%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.card {
+  background-image: url(images/bg-main-desktop.png);
+  width: 445px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: visible;
+}
+
+.front {
+  position: relative;
+  background-image: url(images/bg-card-front.png);
+  aspect-ratio: 1/1;
+  width: 445px;
+  height: 245px;
+  transform: translateX(25%);
+  padding: 1.5rem 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.front img {
+  margin-bottom: 4rem;
+}
+
+.front h1 {
+  color: white;
+}
+
+.front .name-exp {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.3rem;
+  font-size: 13px;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+.back {
+  position: relative;
+  background-image: url(images/bg-card-back.png);
+  width: 447px;
+  height: 245px;
+  transform: translateX(50%);
+  margin-top: 1rem;
+  aspect-ratio: 1/1;
+}
+
+.back p {
+  position: relative;
+  transform: translate(360px, 109px);
+  color: white;
+  width: fit-content;
+}
+
+.card-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  margin: 0 10%;
+  margin-left: 300px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
